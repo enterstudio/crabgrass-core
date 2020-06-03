@@ -209,7 +209,7 @@ group :test, :ci do
 
   # Capybara driver with javascript capabilities using phantomjs
   # locked to major version for stable API
-  gem 'poltergeist', '~> 1.5', require: false
+  gem 'poltergeist', '~> 1.13', '>= 1.13.0', require: false
 
   # Headless webkit browser for testing, fast and with javascript
   # Version newer than 1.8 is required by current poltergeist.
