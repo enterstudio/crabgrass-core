@@ -78,7 +78,7 @@ gem 'acts-as-taggable-on', '~> 3.5'
 
 # Page Caching has been removed from rails 4.
 # migrate it and drop this.
-gem 'actionpack-page_caching'
+gem 'actionpack-page_caching', '>= 1.2.1'
 
 ##
 # Single use tools
