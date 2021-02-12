@@ -13,7 +13,7 @@ end
 
 # Rails is the framework we use.
 # use the 4.2 series including all security fixes
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.5'
 
 # Rake is rubys make... performing tasks
 # locking in to latest major to fix API
