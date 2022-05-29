@@ -13,7 +13,7 @@ end
 
 # Rails is the framework we use.
 # use the 4.2 series including all security fixes
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 5.0.0'
 
 # Rake is rubys make... performing tasks
 # locking in to latest major to fix API
@@ -209,7 +209,7 @@ group :test, :ci do
 
   # Capybara driver with javascript capabilities using phantomjs
   # locked to major version for stable API
-  gem 'poltergeist', '~> 1.5', require: false
+  gem 'poltergeist', '~> 1.13', '>= 1.13.0', require: false
 
   # Headless webkit browser for testing, fast and with javascript
   # Version newer than 1.8 is required by current poltergeist.
