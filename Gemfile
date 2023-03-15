@@ -13,7 +13,7 @@ end
 
 # Rails is the framework we use.
 # use the 4.2 series including all security fixes
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 6.1.7', '>= 6.1.7.3'
 
 # Rake is rubys make... performing tasks
 # locking in to latest major to fix API
@@ -71,14 +71,14 @@ gem 'thinking-sphinx', '3.1.4', require: 'thinking_sphinx'
 #
 # Use delayed job to postpone the delta processing
 # latest version available. Stick to major release
-gem 'ts-delayed-delta', '~> 2.0'
+gem 'ts-delayed-delta', '~> 2.0', '>= 2.0.2'
 
 # Enhanced Tagging lib. Used to tag pages
-gem 'acts-as-taggable-on', '~> 3.5'
+gem 'acts-as-taggable-on', '~> 4.0', '>= 4.0.0'
 
 # Page Caching has been removed from rails 4.
 # migrate it and drop this.
-gem 'actionpack-page_caching'
+gem 'actionpack-page_caching', '>= 1.2.0'
 
 ##
 # Single use tools
@@ -106,7 +106,7 @@ gem 'aasm' , '~> 3.4'
 # lists used for tasks and choices in votes so far
 # continuation of the old standart rails plugin
 # locking in to latest major to fix API, not really maintained though
-gem 'acts_as_list', '~> 0.4'
+gem 'acts_as_list', '~> 0.9', '>= 0.9.1'
 
 # Check the format of email addresses against RFCs
 # better maintained than validates_as_email
@@ -144,7 +144,7 @@ gem 'mime-types', require: 'mime/types'
 
 # process heavy tasks asynchronously
 # 4.0 is most recent right now. fix major version.
-gem 'delayed_job_active_record', '~> 4.0'
+gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.5'
 
 # delayed job runner as a deamon
 gem 'daemons'
