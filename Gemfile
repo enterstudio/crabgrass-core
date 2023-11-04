@@ -120,7 +120,7 @@ gem 'validates_email_format_of', '~> 1.6'
 # Formatting text input
 # We extend this to resolve links locally -> GreenCloth
 # locking in to latest major to fix API
-gem 'RedCloth', '~> 4.2'
+gem 'RedCloth', '~> 4.3', '>= 4.3.3'
 
 ##
 ## required, included with crabgrass
