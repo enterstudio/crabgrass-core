@@ -13,7 +13,7 @@ end
 
 # Rails is the framework we use.
 # use the 4.2 series including all security fixes
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 7.0.8', '>= 7.0.8.1'
 
 # Rake is rubys make... performing tasks
 # locking in to latest major to fix API
@@ -37,7 +37,7 @@ gem 'json', '~> 1.8'
 # Markup language that uses indent to indicate nesting
 # locking in to latest major to fix API
 gem 'haml', '~> 4.0'
-gem 'haml-rails', '~> 0.9.0'
+gem 'haml-rails', '~> 1.0.0'
 
 # Extendet scriptable CSS language
 # locking in to latest major to fix API
@@ -78,7 +78,7 @@ gem 'acts-as-taggable-on', '~> 3.5'
 
 # Page Caching has been removed from rails 4.
 # migrate it and drop this.
-gem 'actionpack-page_caching'
+gem 'actionpack-page_caching', '>= 1.2.0'
 
 ##
 # Single use tools
@@ -178,7 +178,7 @@ end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   # needed for some rake tasks, but not generally.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
 group :test, :development do
@@ -191,7 +191,7 @@ group :test, :ci do
   ## TESTS
   ##
 
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faker', '~> 1.0.0'
 
   gem 'minitest', require: false
@@ -205,11 +205,11 @@ group :test, :ci do
   ## INTEGRATION TESTS
   ##
 
-  gem 'capybara', require: false
+  gem 'capybara', '>= 2.12.1', require: false
 
   # Capybara driver with javascript capabilities using phantomjs
   # locked to major version for stable API
-  gem 'poltergeist', '~> 1.5', require: false
+  gem 'poltergeist', '~> 1.14', '>= 1.14.0', require: false
 
   # Headless webkit browser for testing, fast and with javascript
   # Version newer than 1.8 is required by current poltergeist.
