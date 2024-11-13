@@ -74,7 +74,7 @@ gem 'thinking-sphinx', '3.1.4', require: 'thinking_sphinx'
 gem 'ts-delayed-delta', '~> 2.0'
 
 # Enhanced Tagging lib. Used to tag pages
-gem 'acts-as-taggable-on', '~> 3.5'
+gem 'acts-as-taggable-on', '~> 12.0', '>= 12.0.0'
 
 # Page Caching has been removed from rails 4.
 # migrate it and drop this.
