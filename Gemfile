@@ -13,7 +13,7 @@ end
 
 # Rails is the framework we use.
 # use the 4.2 series including all security fixes
-gem 'rails', '~> 4.2.7'
+gem 'rails', '~> 7.1.0'
 
 # Rake is rubys make... performing tasks
 # locking in to latest major to fix API
@@ -37,7 +37,7 @@ gem 'json', '~> 1.8'
 # Markup language that uses indent to indicate nesting
 # locking in to latest major to fix API
 gem 'haml', '~> 4.0'
-gem 'haml-rails', '~> 0.9.0'
+gem 'haml-rails', '~> 2.1.0'
 
 # Extendet scriptable CSS language
 # locking in to latest major to fix API
@@ -66,19 +66,19 @@ gem 'prototype_legacy_helper', '0.0.0',
 # with rails 3.2 but they should not affect us
 # 3.1.3 prints warnings with latest sphinx:
 # https://github.com/pat/thinking-sphinx/issues/882
-gem 'thinking-sphinx', '3.1.4', require: 'thinking_sphinx'
+gem 'thinking-sphinx', '3.2.0', require: 'thinking_sphinx'
 
 #
 # Use delayed job to postpone the delta processing
 # latest version available. Stick to major release
-gem 'ts-delayed-delta', '~> 2.0'
+gem 'ts-delayed-delta', '~> 2.1', '>= 2.1.0'
 
 # Enhanced Tagging lib. Used to tag pages
 gem 'acts-as-taggable-on', '~> 3.5'
 
 # Page Caching has been removed from rails 4.
 # migrate it and drop this.
-gem 'actionpack-page_caching'
+gem 'actionpack-page_caching', '>= 1.2.0'
 
 ##
 # Single use tools
@@ -93,7 +93,7 @@ gem 'http_accept_language', '~> 2.0'
 
 # Removes invalid UTF-8 characters from requests
 # use the latest. No API that could change.
-gem 'utf8-cleaner'
+gem 'utf8-cleaner', '>= 1.0.0'
 
 # Pagination for lists with a lot of items
 # locking in to latest major to fix API
@@ -106,7 +106,7 @@ gem 'aasm' , '~> 3.4'
 # lists used for tasks and choices in votes so far
 # continuation of the old standart rails plugin
 # locking in to latest major to fix API, not really maintained though
-gem 'acts_as_list', '~> 0.4'
+gem 'acts_as_list', '~> 0.9', '>= 0.9.2'
 
 # Check the format of email addresses against RFCs
 # better maintained than validates_as_email
@@ -132,7 +132,7 @@ gem 'greencloth', require: 'greencloth',
 
 # media upload post processing has it's own repo
 # version is rather strict for now as api may still change.
-gem 'crabgrass_media', '~> 0.1.1', require: 'media'
+gem 'crabgrass_media', '~> 0.5.0', require: 'media'
 
 ##
 ## not required, but a really good idea
@@ -144,7 +144,7 @@ gem 'mime-types', require: 'mime/types'
 
 # process heavy tasks asynchronously
 # 4.0 is most recent right now. fix major version.
-gem 'delayed_job_active_record', '~> 4.0'
+gem 'delayed_job_active_record', '~> 4.1', '>= 4.1.5'
 
 # delayed job runner as a deamon
 gem 'daemons'
@@ -178,7 +178,7 @@ end
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   # needed for some rake tasks, but not generally.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 
 group :test, :development do
@@ -191,7 +191,7 @@ group :test, :ci do
   ## TESTS
   ##
 
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails', '>= 4.9.0'
   gem 'faker', '~> 1.0.0'
 
   gem 'minitest', require: false
@@ -205,11 +205,11 @@ group :test, :ci do
   ## INTEGRATION TESTS
   ##
 
-  gem 'capybara', require: false
+  gem 'capybara', '>= 2.12.1', require: false
 
   # Capybara driver with javascript capabilities using phantomjs
   # locked to major version for stable API
-  gem 'poltergeist', '~> 1.5', require: false
+  gem 'poltergeist', '~> 1.14', '>= 1.14.0', require: false
 
   # Headless webkit browser for testing, fast and with javascript
   # Version newer than 1.8 is required by current poltergeist.
